@@ -1,9 +1,11 @@
-*{
+  *{
   box-sizing: border-box;
   color: white;
+  font-family: 'DM Sans';
 }
 body {
     margin: 0;
+    padding: 0;
     margin-top: 50px;
 }
 
@@ -15,7 +17,8 @@ header {
     right: 0;
     height: 50px;
     line-height: 50px;
-    background-color: #eee;
+    background-color: #b51431;
+    border-bottom: 1px solid black
 }
 
 header * {
@@ -26,48 +29,109 @@ header * {
 header ul {
     padding: 0;
 }
-h1 {
-  font-size: 5vw;
+header ul li a {
+  text-decoration: none;
+  padding: 15px 10px;
+  transition: background 0.3s;
 }
-#hero .section-inner h2 {
-  font-size: 3vw;
-}
-header li {
-    margin-left: 20px;
+header ul li a:hover {
+  background: black;
 }
 
 section {
-    height: 100vh;
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    text-align: center;
 }
 
-#hero .profile-img {
-    width: 300px;
+/*Hero Page Start*/
+.my-name{
+  font-size: 300%;
+  font-weight: bold;
+  margin-top: 45vh;
+}
+.web-dev{
+  font-size: 150%;
+}
+#hero {
+ background-image: url('./images/background.webp');
+ height: 100vh;
+}
+.download-cv-btn{
+  background: #b51431;
+  margin-top: 50px;
+  padding: 10px 20px;
+}
+/*Hero Page End*/
+
+/*About Page Start*/
+#about {
+  background: black;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+#about .section-inner h2{
+  /*color: #b51431;*/
+}
+/*About Page End*/
+
+/*Projects Start*/
+#projects{
+  background: #b51431;
+  height: auto;
+  padding: 30px;
+}
+.project-container{
+  display: grid;
 }
 
+.project-item{
+  max-width: 300px;
+  border-radius: 10px;
+  background: white;
+  margin: 10px;
+}
+.image-container{
+  max-height: 250px;
+}
+.project-image{
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.project-name{
+  color: #b51431;
+}
+@media(min-width: 600px){
+  .project-container{
+    grid-template-columns: repeat(2, 1fr)
+  }
+}
+@media(min-width: 900px){
+  .project-container{
+    grid-template-columns: repeat(3, 1fr)
+  }
+}
+/*Projects End*/
+
+/* Contacts Start */
+#contact {
+    background: black;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Contacts End */
 footer {
     text-align: center;
     padding: 50px;
 }
-#hero {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&w=1000&q=80);
-}
 
-#about {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8&w=1000&q=80);
-}
-#contact {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
-}
-
-footer, header{
-  background-color: black;
+footer{
+  background-color: #b51431;
 }

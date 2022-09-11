@@ -3,38 +3,83 @@
   <head>
     <meta charset="utf-8">
     <title>Object-oriented JavaScript example</title>
-    <link rel="stylesheet" href="style.css"
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
   </head>
 <!-- https://codetheweb.blog/steps-to-creating-a-website/-->
   <body>
     <header>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Contacts</li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contacts</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section id="hero">
         <div class="section-inner">
-          <h1>Hi I am Ronald Abel</h1>
-          <h2>A Front End Developer</h2>
+          <div class="my-name">RONALD ABEL</div>
+          <div class="web-dev">Web Developer</div>
+          <a href="./resume/example.txt" download>
+          <button class="download-cv-btn">Download CV</button>
+          </a>
         </div>
       </section>
       <section id="about">
         <div class="section-inner">
-          <h2>About me:</h2>
-          <p>I love programming because it gives me power to create and I love learning</p>
+          <h2>Hi, I am Ronald Abel</h2>
+          <p>I love discovering and creating apps with cutting-edge technologies. I am a constant and quick learner. I enjoy collaborating with others to solve problems. I believe helping people achieve their goals helps me achieve mine.</p>
           <h3>Achievements</h3>
           <ul>
             <li>freeCodeCamp Responsive Web Design Certification</li>
             <li>freeCodeCamp Javascript and Data Structures Certification</li>
             <li>freeCodeCamp Frontend Frameworks Certification</li>
-            <li>Programming Hero Python Certification</li>
+            <li>Sololearn Certificates(HTML,CSS,JS and React/Redux)</li>
         </div>
+      </section>
+      <section id="projects">
+          <h2>My Personal Projects</h2>
+          <div class="project-container">
+            <div class="project-item">
+              <div class="image-container">
+                <img class="project-image"src="./images/image1.jpg">
+              </div>
+              <p class="project-name">Lorem Ipsum</p>
+            </div>
+            <div class="project-item">
+              <div class="image-container">
+                <img class="project-image"src="./images/image1.jpg">
+              </div>
+              <p class="project-name">Lorem Ipsum</p>
+            </div>
+            <div class="project-item">
+              <div class="image-container">
+                <img class="project-image" src="./images/image1.jpg">
+              </div>
+              <p class="project-name">Lorem Ipsum</p>
+            </div>
+            <div class="project-item">
+              <div class="image-container">
+                <img class="project-image" src="./images/image1.jpg">
+              </div>
+              <p class="project-name">Lorem Ipsum</p>
+            </div>
+            <div class="project-item">
+              <div class="image-container">
+                <img class="project-image" src="./images/image1.jpg">
+              </div>
+              <p class="project-name">Lorem Ipsum</p>
+            </div>
+            <div class="project-item">
+              <div class="image-container">
+                <img class="project-image" src="./images/image1.jpg">
+              </div>
+              <p class="project-name">Lorem Ipsum</p>
+            </div>
+          </div>
       </section>
       <section id="contact">
         <div class="section-inner">
@@ -50,7 +95,7 @@
       </section>
     </main>
     <footer>
-      <p>&copy; Copyright 2021 Ronald Abel </p>
+      <p>&copy; Copyright 2022 Ronald Abel </p>
     </footer>
   </body>
 
