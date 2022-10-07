@@ -66,6 +66,8 @@ header ul li a:hover {
   background: #b51431;
   margin-top: 50px;
   padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
 }
 /*Hero Page End*/
 
