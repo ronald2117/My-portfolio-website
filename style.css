@@ -69,6 +69,9 @@ header ul li a:hover {
   border-radius: 5px;
   border: none;
 }
+.download-cv-btn:hover{
+  cursor: pointer;
+}
 /*Hero Page End*/
 
 /*About Page Start*/
