@@ -5,7 +5,7 @@
 }
 * {
   box-sizing: border-box;
-  color: white;
+  color: var(--white);
   font-family: 'DM Sans';
 }
 body {
@@ -31,7 +31,7 @@ header {
     height: 50px;
     line-height: 50px;
     background-color: var(--red);
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid var(--black);
     z-index: 9999;
 }
 
@@ -49,7 +49,7 @@ header ul li a {
   transition: background 0.3s;
 }
 header ul li a:hover {
-  background: black;
+  background: var(--black);
 }
 
 /*Hero Page Start*/
@@ -113,12 +113,12 @@ header ul li a:hover {
 .project-image{
   width: 100%;
   height: 100%;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   border-radius: 10px;
   display: block;
 }
 .project-name{
-  color: #b51431;
+  color: var(--red);
 }
 .project-overlay{
   position: absolute;
