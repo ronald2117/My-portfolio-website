@@ -101,6 +101,7 @@ header ul li a:hover {
 
 /*Projects Start*/
 #projects {
+  text-align: center;
   background: var(--red);
   height: auto;
   padding: 30px;
