@@ -1,139 +1,86 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ronald Abel</title>
-  <link rel="stylesheet" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=DM Sans' rel='stylesheet'>
-</head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ronald's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2.9.3/tsparticles.bundle.min.js"></script>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#hero">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contacts</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <section id="hero">
-      <div class="section-inner">
-        <div class="my-name">RONALD ABEL</div>
-        <div class="web-dev">Web Developer</div>
-        <a href="#projects">
-          <button class="action-btn">See my works</button>
-        </a>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+  <!-- Hero Section -->
+  <div id="tsparticles" class="absolute inset-0 -z-10">
+  </div>
+  <section class="min-h-screen flex items-center justify-center px-4">
+    <div class="text-center max-w-2xl">
+      <div class="w-32 h-32 mx-auto mb-4 bg-gray-300 rounded-full"></div>
+      <h1 class="text-4xl font-bold mb-2">Hi, I'm Ronald</h1>
+      <p class="text-lg mb-4">I build clean, responsive websites.</p>
+      <a href="#projects" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">View Projects</a>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-4 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Project Card -->
+        <div class="bg-white rounded-xl shadow-md overflow-hidden">
+          <div class="h-48 bg-gray-300"></div>
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Project Name</h3>
+            <p class="text-sm text-gray-600 mb-2">Built with HTML, CSS, JavaScript</p>
+            <div class="flex gap-4">
+              <a href="#" class="text-blue-600 hover:underline">GitHub</a>
+              <a href="#" class="text-blue-600 hover:underline">Live Demo</a>
+            </div>
+          </div>
+        </div>
+        <!-- Duplicate the above project card for more -->
       </div>
-    </section>
-    <section id="about">
-      <div class="about-inner">
-        <h2>Hi, I am Ronald Abel</h2>
-        <p>a passionate second-year Computer Science student specializing in front-end and back-end development. I love
-          creating interactive, user-friendly web applications using React.js, Node.js, HTML, CSS, and JavaScript.
-          Welcome to my portfolio!"</p>
-        <h3>Achievements</h3>
-        <ul>
-          <li><a target="_blank"
-              href="https://www.freecodecamp.org/certification/ronald2117/responsive-web-design">freeCodeCamp Responsive
-              Web Design Certification</a></li>
-          <li><a target="_blank"
-              href="https://www.freecodecamp.org/certification/ronald2117/javascript-algorithms-and-data-structures">freeCodeCamp
-              Javascript and Data Structures Certification</a></li>
-          <li><a target="_blank" href="https://www.sololearn.com/profile/24089121">Sololearn Certificates(HTML, CSS,
-              JS,jQuery, and React/Redux)</a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/mwlite/in/ronald-abel-a91b0b241">LinkedIn badge(HTML,
-              CSS and Javascript</a></li>
-      </div>
-    </section>
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project-container">
-        <div class="project-item">
-          <div class="image-container">
-            <img class="project-image" src="./images/react-todolist.jpg">
-            <div class="project-overlay">
-              <a target="_blank" href="https://ronald2117.github.io/todo-list/">>Live Preview</a>
-              <a target="_blank" href="https://github.com/ronald2117/todo-list">>View Source Code</a>
-            </div>
-          </div>
-          <p class="project-name">React To-do List</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="py-16 px-4">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+      <form class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium mb-1">Name</label>
+          <input type="text" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200" />
         </div>
-        <div class="project-item">
-          <div class="image-container">
-            <img class="project-image" src="./images/landingpage.png">
-            <div class="project-overlay">
-              <a target="_blank" href="https://ronald2117.github.io/landing-page-odin-project/#">>Live Preview</a>
-              <a target="_blank" href="https://github.com/ronald2117/landing-page-odin-project">>View Source Code</a>
-            </div>
-          </div>
-          <p class="project-name">Landing Page</p>
+        <div>
+          <label class="block text-sm font-medium mb-1">Email</label>
+          <input type="email" class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200" />
         </div>
-        <div class="project-item">
-          <div class="image-container">
-            <img class="project-image" src="./images/calculator.jpg">
-            <div class="project-overlay">
-              <a target="_blank" href="https://ronald2117.github.io/Simple-Calculator/">>Live Preview</a>
-              <a target="_blank" href="https://github.com/ronald2117/Simple-Calculator">>View Source Code</a>
-            </div>
-          </div>
-          <p class="project-name">JavaScript Calculator </p>
+        <div>
+          <label class="block text-sm font-medium mb-1">Message</label>
+          <textarea class="w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring focus:ring-blue-200"></textarea>
         </div>
-        <div class="project-item">
-          <div class="image-container">
-            <img class="project-image" src="./images/admin-dashboard.png">
-            <div class="project-overlay">
-              <a target="_blank" href="https://ronald2117.github.io/Admin-Dashboard-TOP/">>Live Preview</a>
-              <a target="_blank" href="https://github.com/ronald2117/Admin-Dashboard-TOP">>View Source Code</a>
-            </div>
-          </div>
-          <p class="project-name">Admin Dashboard</p>
-        </div>
-        <div class="project-item">
-          <div class="image-container">
-            <img class="project-image" src="./images/romannumconverter.png">
-            <div class="project-overlay">
-              <a target="_blank" href="https://ronald2117.github.io/Roman-numeral-Converter-VanillaJs/">>Live
-                Preview</a>
-              <a target="_blank" href="https://github.com/ronald2117/Roman-numeral-Converter-VanillaJs">>View Source
-                Code</a>
-            </div>
-          </div>
-          <p class="project-name">Roman Numeral Converter</p>
-        </div>
-        <div class="project-item">
-          <div class="image-container">
-            <img class="project-image" src="./images/tictactoe.png">
-            <div class="project-overlay">
-              <a target="_blank" href="https://ronald2117.github.io/Project-Tic-Tac-Toe-TOP/""">>Live Preview</a>
-              <a target="_blank" href="https://github.com/ronald2117/Project-Tic-Tac-Toe-TOP">>View Source Code</a>
-            </div>
-          </div>
-          <p class="project-name">Tic-tac-toe</p>
-        </div>
-      </div>
-    </section>
-    <section id="contact">
-      <div class="section-inner">
-        <h2>Contact Me</h2>
-        <p>You can find me on:</p>
-        <ul>
-          <li><a target="_blank" href="https://www.facebook.com/ronald1617/">Facebook</a>
-          <li><a target="_blank" href="https://www.linkedin.com/in/ronald-abel-bab495212/">LinkedIn</a></li>
-          <li><a target="_blank" href="https://github.com/ronald2117">GitHub</a>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <p id="copyright"></p>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="text-center py-8 text-sm text-gray-500">
+    &copy; 2025 Ronald. All rights reserved.
   </footer>
 </body>
-
-<script src="script.js"></script>
+<script>
+  tsParticles.load("tsparticles", {
+    background: {
+      color: "#0f172a"
+    },
+    particles: {
+      number: { value: 50 },
+      size: { value: 2 },
+      move: { enable: true, speed: 1 },
+      links: { enable: true, color: "#ffffff", distance: 100 }
+    }
+  });
+</script>
 
 </html>
